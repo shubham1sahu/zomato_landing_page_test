@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+.h{
+  background-image: url(/images/81f3ff974d82520780078ba1cfbd453a1583259680.webp);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 15%;
+height: 60px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.navbar1{
+}
+.navbar2{
+  display: flex;
+  gap: 30px;
+  font-size: 110%;
+  font-weight: 300;
+}
+.user__icon{
+  width: 30px;
+  height:30px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius:100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+body{
+  overflow-y: scroll;
+}
+.hero--section--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(60vh - 60px);
+  gap: 32px;
+  position:relative;
+  top: -25px;
+  text-align: center;
+  width: 100%;
+}
+.discription{
+  font-size:35px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero--section--input{
+  background: white; 
+  display: flex;
+  border-radius: 10px;
+  padding: 10px ;
+  width: 50pc;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.input--locate,.input--search{
+  border: transparent;
+  padding: 5px;
+  outline: none;
+
+}
+.input--locate{
+  border-right: 1px solid rgb(133, 128, 128);
+  width: 30%;
+}
+.input--search{
+  width: 70%;
+}
+@media only screen and (max-width:700px) {
+.user__icon{
+  display: flex;
+}
+.navbar2{
+  display: none;
+}
+}
+@media only screen and (max-width:880px){
+  .hero--section--input{
+    width: 90%
+  }
+}
