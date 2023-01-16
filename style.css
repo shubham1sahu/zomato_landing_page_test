@@ -105,6 +105,117 @@ body{
   background-color: transparent;
 }
 }
+.contain1{
+margin: 20px auto;
+ width: 90%;
+}
+ .contain{ 
+margin: 55px auto;
+width: 73%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+}
+.card{
+  border:1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  min-width: 27%;
+ }
+.card img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover; 
+  object-position: center; 
+ }
+.card h3{
+  font-size: 20px;
+  font-weight:400;
+  padding-left: 15px;
+}
+.container .card p{
+  font-size: 16px;
+  padding:  10px 15px 10px 15px ;
+  align-items: center;
+  color: grey;
+}
+.container .card:hover{
+  transform: scale(1.05);
+}
+.heading--collection{
+  font-weight: 400;
+  font-size: 35px;
+}
+.sub--heading{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 18px;
+  align-items: center;
+  color: rgb(71, 67, 67);
+  font-weight: 250;
+}
+.sub--heading2{
+  font-size:15px ;
+  color: #f52b2b;
+}
+.collections_card_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.collections_card_container .collections_card {
+  min-width: 264px;
+  height: 320px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+  width: 100%;
+  height: 100%;
+  display: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.collections_card_container .collections_card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+.card1{
+  background-image: url(/images/img-20200723-5f19857496cee.webp);
+}
+.card2{
+  background-image: url(/images/2.jpg);
+}
+.card3{
+  background-image: url(/images/3.jpg);
+}
+.card4{
+  background-image: url(/images/4.jpg);
+}
 @media only screen and (max-width:880px){
   .hero--section--input{
     width: 90%
@@ -118,5 +229,151 @@ body{
     position: relative;
     top: -10px;
   }
+  
+}
+@media only screen and (max-width:685px){
+  .block--elements{
+    flex-direction: column;
+  }
+  
+}
+.block--heading{
+  margin-top:10%;
+  padding-bottom:30px;
+  font-size: 35px;
+  font-weight: 300;
+  color: rgb(22, 21, 21);
+ width: 100%;
+ position: static;
+}
+.block--heading #b{
+  font-weight: 480;
+}
+.block--elements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px 10px;
+
+ 
+}
+.block--elements .button{
+  box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+  border: 1px solid rgb(236, 231, 231);
+  outline: none;
+  border-radius: 5px;
+  width:32%;
+  height: 70px;
+  padding: 20px;
+  white-space  : nowrap;
+  overflow     : hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: static;
+}
+.button h2{
+  font-weight: 300;
+  font-size: 20px;
+}
+ .button span{
+  font-size: 16px; 
+  font-weight: 220;
+}
+.semicontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 251, 247);
+  width: 100%;
+  margin-top: 120px;
+  padding: 48px 48px;
+}
+
+
+.detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.detail1{
+  flex: 2;
+  position: relative;
+  top: 26px;
+  right: -65px;
+}
+.detail1 img{
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+}
+.detail2{
+  flex: 3;
+}
+.detail-heading h2{
+  font-weight: 400;
+  font-size: 43px;
+  margin-bottom: 18px;
+}
+.radio-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 40%;
+  height: 30px;
+  accent-color: rgb(230, 51, 51);
+  margin: 10px 0 10px 0;
+  }
+  .radio-button div{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+.input-email{
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  height: 50px;
+ 
+}
+.input-email input{
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+
+}
+.input-email button{
+  width: 40%;
+  border: transparent;
+  color: #e0e0e0;
+  cursor: pointer;
+  background-color:rgb(232, 77, 77) ;
+  border-radius: 5px;
+}
+.download__app_container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+.store-logo{display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  /* height: 30px; */
+  gap: 10px;
+  overflow: hidden;
+}
+.store-logo img{
+  width: 150px;
+  height: 40px;
 
 }
