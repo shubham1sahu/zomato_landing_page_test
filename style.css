@@ -235,9 +235,7 @@ width: 73%;
   .block--elements{
     flex-direction: column;
   }
-  .block--elements .button{
-    
-  }
+  
 }
 .block--heading{
   margin-top:10%;
