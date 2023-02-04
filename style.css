@@ -235,7 +235,7 @@ width: 73%;
   .block--elements{
     flex-direction: column;
   }
-  .logo-container{
+    .logo-container{
     width: 50%;
     flex-wrap: wrap;
   }
@@ -268,12 +268,13 @@ width: 73%;
   border: 1px solid rgb(236, 231, 231);
   outline: none;
   border-radius: 5px;
-  width:32%;
-  height: 70px;
-  padding: 20px;
+  min-width: 270px;
+  min-height: 70px;
+  padding: 10px;
   white-space  : nowrap;
   overflow     : hidden;
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
